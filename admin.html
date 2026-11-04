@@ -1,0 +1,81 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Admin Page</title>
+
+        <link rel="stylesheet" href="styles/admin.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <header>
+            <a href="index.html">
+                <img class="logo" src="images/logo.png" alt="">
+            </a>
+            <h3 class="page-title">Admin's Page</h3>
+        </header>
+
+
+        <main class="admin-container">
+            <section class="add-item">
+                <h2>Add an Item</h2>
+
+                <div class="item-container">
+                    <form id="add-item-form">
+                        <div class="form-grid">
+
+                            <div class="item-img-container">
+                                <input type="file" id="image-input" accept="image/*" style="display: none;">
+                                <button type="button" class="item-img" id="upload-btn">
+                                    <span class="plus-sign">+</span>
+                                    <img id="image-preview" src="" alt="Preview" style="display: none;">
+                                </button>
+                            </div>
+
+                            <div class="fields-container">
+
+                                <div class="form-group">
+                                    <label for="item-name">Item:</label>
+                                    <input type="text" id="item-name" name="item-name" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="item-price">Price:</label>
+                                    <input type="number" name="item-price" id="item-price" step="0.01" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="item-type">Type:</label>
+                                    <select name="item-type" id="item-type" class="modern-select" required>
+                                        <option value="sandwish">Sandwish</option>
+                                        <option value="meal">Meal</option>
+                                        <option value="salad">Salad</option>
+                                        <option value="fries">Fries</option>
+                                        <option value="drinks">Drinks</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="submit-container">
+                            <button type="submit" class="submit-btn">Submit</button>
+                        </div>
+
+                    </form>
+                </div>
+            </section>
+
+            <section class="delete-item">
+                <div class="products-container">
+                    <h2>Delete a menu item</h2>
+
+                    <div class="products-grid js-products-grid"></div>
+                </div>
+            </section>
+        </main>
+
+        <script src="scripts/admin.js" type="module" defer></script>
+        
+    </body>
+    </html>

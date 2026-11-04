@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>So Cheesy Website</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <header>
+        <div class="nav container">
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="">
+            </a>
+
+            <div class="navbar">
+                <a href="#feature-sandwishes" class="nav-link">Sandwiches</a>
+                <a href="#featured-meals" class="nav-link">Meals</a>
+                <a href="#featured-salads" class="nav-link">Salads</a>
+                <a href="#featured-fries" class="nav-link">Fries</a>
+                <a href="#featured-drinks" class="nav-link">Drinks</a>
+            </div>
+
+            <div class="nav-icons">
+                <a href="admin.html" class="admin">
+                    <i class='bx bx-user'></i>
+                </a>
+                <a href="checkout.html" class="cart">
+                    <i class='bx bx-cart-alt'></i>
+                    <span class="js-cart-quantity">0</span>
+                </a>
+            </div>
+
+            <div class="menu-icon">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="featured-sandwishes container" id="feature-sandwishes">
+        <h2 class="heading">
+            So Cheesy Featured Sandwishes
+        </h2>
+        <div class="featured-menu-content js-featured-menu"></div>
+    </section>
+
+    <section class="featured-meals container" id="featured-meals">
+        <h2 class="heading">
+            Featured Meals
+        </h2>
+        <div class="featured-meals-content js-featured-meals"></div>
+    </section>
+
+    <section class="featured-salads container" id="featured-salads">
+        <h2 class="heading">Featured Salads</h2>
+        <div class="featured-salad-content js-featured-salads"></div>
+    </section>
+
+    <section class="features-fries container" id="featured-fries">
+        <h2 class="heading">Featured Fries</h2>
+        <div class="featured-fries-content js-featured-fries"></div>
+    </section>
+
+    <section class="features-drinks container" id="featured-drinks">
+        <h2 class="heading">Featured Drinks</h2>
+        <div class="featured-drinks-content js-featured-drinks"></div>
+    </section>
+
+    
+
+    <script type="module" src="scripts/menu.js?v=1.1"></script>
+
+  
+    
+</body>
+</html>
